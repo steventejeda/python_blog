@@ -2,6 +2,8 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from os import path
 from flask_login import LoginManager
+import sys
+sys.dont_write_bytecode = True
 
 
 db = SQLAlchemy()
